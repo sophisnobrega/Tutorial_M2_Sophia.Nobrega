@@ -1,3 +1,4 @@
+
 const express = require('express'); //pedindo o framework express
 const app = express(); // inicializa o express
 const bodyParser = require('body-parser'); // pedindo o bodyparser
@@ -70,4 +71,3 @@ app.listen(port, hostname, () => //com o listen, mantem o servidor ativo escutan
 {
     console.log(`Server running at http://${hostname}:${port}/`); //console log imprimi no console do servidor e o ${port} permite usar variaveis no meio do texrto
 })
-
