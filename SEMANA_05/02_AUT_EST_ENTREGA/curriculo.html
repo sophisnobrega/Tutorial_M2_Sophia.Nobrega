@@ -3,16 +3,21 @@
     <title>curriculo personalizavel</title>
     <style>
         h1 {
-            font: normal 24pt Inter;
+            font: normal 18pt Inter;
+            background-color: #F0F0F0;
         }
-        h3 {
-            font: normal 10pt Inter;
+        h4 {
+            font: normal 14pt Inter;
+            background-color: #F0F0F0;
+            color: brown;
         }
         body {
-            font: normal 8pt Inter;
+            font: normal 12pt Inter;
+            background-color: #F0F0F0;
         }
         footer {
-            font: normal 5pt Inter;
+            font: normal 10pt Inter;
+            background-color: #F0F0F0;
         }
     </style>
     <h1>
@@ -23,9 +28,9 @@
         </script>
     </h1>
     <body>
-        <h3>
+        <h4>
             <small>EXPERIÊNCIA</small>
-        </h3>
+        </h4>
         <script>
             var nl = window.prompt("Nome do ultimo lugar onde voce trabalhou? ")
             var cl = window.prompt("Qual era o seu cargo? ")
@@ -37,9 +42,9 @@
             document.write(`${des}`)
         </script>
         <br>
-        <h3>
+        <h4>
             <small>FORMAÇÃO</small>
-        </h3>
+        </h4>
         <script>
             var ni = window.prompt("Onde voce se formou? ")
             var cu = window.prompt("Qual era o seu curso? ")
@@ -50,9 +55,9 @@
             document.write(`<br>(${de_i} - ${ds_i})</br>`)
             document.write(`${des_i}`)
         </script>
-        <h3>
+        <h4>
             <small>REALIZAÇÕES</small>
-        </h3>
+        </h4>
         <script>
             var realização = window.prompt("Voce ja ganhou algum premio? ")
             // por um if que diz que se a resposta for sim, continua, senão, para
@@ -64,9 +69,9 @@
             document.write(`<br>(${data})</br>`)
             document.write(`${des_p}`)
         </script>
-        <h3>
+        <h4>
             <small>HABILIDADES</small>
-        </h3>
+        </h4>
         <script>
             var nh = window.prompt("De um nome de uma habilidade sua. ")
             var nivel = window.prompt("Agora diga se voce e nivel baixo, medio ou avançado. ")
