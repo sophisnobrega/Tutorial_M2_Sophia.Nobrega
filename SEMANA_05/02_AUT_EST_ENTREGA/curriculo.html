@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <title>curriculo personalizavel</title>
+    <style>
+        h1 {
+            font: normal 24pt Inter;
+        }
+        h3 {
+            font: normal 10pt Inter;
+        }
+        body {
+            font: normal 8pt Inter;
+        }
+        footer {
+            font: normal 5pt Inter;
+        }
+    </style>
+    <h1>
+        <script>
+            var nome = window.prompt("Qual e o seu nome e sobrenome? ")
+            var cargo = window.prompt("Qual e o nome do seu cargo? ")
+            document.write(nome + " | " + cargo)
+        </script>
+    </h1>
+    <body>
+        <h3>
+            <small>EXPERIÊNCIA</small>
+        </h3>
+        <script>
+            var nl = window.prompt("Nome do ultimo lugar onde voce trabalhou? ")
+            var cl = window.prompt("Qual era o seu cargo? ")
+            var de = window.prompt ("Quando voce entrou (mm, aaaa)? ")
+            var ds = window.prompt("Quando voce saiu (mm, aaaa)? ")
+            var des = window.prompt("De uma breve descricao do seu trabalho. ")
+            document.write(`<br><strong>${nl}</strong> | ${cl}</br>`)
+            document.write(`<br>(${de} - ${ds})</br>`)
+            document.write(`${des}`)
+        </script>
+        <br>
+        <h3>
+            <small>FORMAÇÃO</small>
+        </h3>
+        <script>
+            var ni = window.prompt("Onde voce se formou? ")
+            var cu = window.prompt("Qual era o seu curso? ")
+            var de_i = window.prompt ("Quando voce entrou (mm, aaaa)? ")
+            var ds_i = window.prompt("Quando voce saiu (mm, aaaa)? ")
+            var des_i = window.prompt("De uma breve descricao da sua formacao. ")
+            document.write(`<br><strong>${ni}</strong> | ${cu}</br>`)
+            document.write(`<br>(${de_i} - ${ds_i})</br>`)
+            document.write(`${des_i}`)
+        </script>
+        <h3>
+            <small>REALIZAÇÕES</small>
+        </h3>
+        <script>
+            var realização = window.prompt("Voce ja ganhou algum premio? ")
+            // por um if que diz que se a resposta for sim, continua, senão, para
+            var nome_i = window.prompt("Onde voce ganhou? ")
+            var tipo = window.prompt("Qual e o tipo de premio (ouro, prata,...) ? ")
+            var data = window.prompt ("Quando voce ganhou (mm, aaaa)? ")
+            var des_p = window.prompt("De uma breve descricao do premio. ")
+            document.write(`<br><strong>${nome_i}</strong> | ${tipo}</br>`)
+            document.write(`<br>(${data})</br>`)
+            document.write(`${des_p}`)
+        </script>
+        <h3>
+            <small>HABILIDADES</small>
+        </h3>
+        <script>
+            var nh = window.prompt("De um nome de uma habilidade sua. ")
+            var nivel = window.prompt("Agora diga se voce e nivel baixo, medio ou avançado. ")
+            var des_h = window.prompt("De uma breve descricao da habilidade. ")
+            document.write(`<br><strong>${nh}</strong> | ${nivel}</br>`)
+            document.write(`${des_p}`)
+        </script>
+    </body>
+    <br>
+    <br>
+    <br>
+    <footer>
+        <script>
+            var endereco = window.prompt("Qual e o seu endereço? ")
+            var telefone = window.prompt("Qual e o seu numero de telefone (00) 0 0000-0000 ? ")
+            var email = window.prompt("Qual e o seu email? ")
+            document.write(`${endereco} | ${telefone} | ${email}`)
+        </script>
+    </footer>
+</html>
