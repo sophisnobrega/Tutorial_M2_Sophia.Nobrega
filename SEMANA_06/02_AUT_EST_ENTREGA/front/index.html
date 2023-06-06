@@ -11,16 +11,16 @@
     <script>
         function verConteudo() {
             $.get("http://127.0.0.1:3000/curriculo", function(dados) {
-                $("#nome").html(dados.nome);
-                $("#profissao").html(dados.profissao);
-                $("#contato").html(dados.contato);
-                $("#email").html(dados.email);
-                $("#faculdade").html(dados.faculdade);
-                $("#curso").html(dados.curso);
-                $("#data_formacao").html(dados.data_formacao);
-                $("#empresa").html(dados.empresa);
-                $("#cargo").html(dados.cargo);
-                $("#data").html(dados.data);
+                $("#nome").html(dados[0].nome);
+                $("#profissao").html(dados[0].profissao);
+                $("#contato").html(dados[0].contato);
+                $("#email").html(dados[0].email);
+                $("#faculdade").html(dados[0].faculdade);
+                $("#curso").html(dados[0].curso);
+                $("#data_formacao").html(dados[0].data_formacao);
+                $("#empresa").html(dados[0].empresa);
+                $("#cargo").html(dados[0].cargo);
+                $("#data").html(dados[0].data);
             });
         }
     </script>

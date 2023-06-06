@@ -10,6 +10,7 @@ if (err){
 	console.log('Tudo certo, chefe ;) ');
 }});
    
+app.use(express.static("../front/"));
 app.use(express.json());
 
 //mantem o servidor on fire
@@ -34,9 +35,8 @@ app.post('/inserir-dados', (req, res) => {
 
 //Read
 app.get('/curriculo', (req, res) => {
-	const get3 = "SELECT * FROM informacoes_pessoais " +
-	            "JOIN formacao ON informacoes_pessoais.id = formacao.id_informacoes_pessoais " +
-	            "JOIN experiencia ON informacoes_pessoais.id = experiencia.id_informacoes_pessoais";
+	res.setHeader('Access-Control-Allow-Origin', '*');
+	const get3 = "SELECT * FROM infromacoes_pessoais, formacao, experiencia;";
 	db.all(get3, [], (err, rows) => { 
 		if (err) {
 			console.error(err.message);
