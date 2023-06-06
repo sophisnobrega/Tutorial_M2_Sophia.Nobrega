@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <style>
+        body {  
+            font: normal 13pt Inter;
+        }
+    </style>
+    <title>curriculo</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        function verConteudo() {
+            $.get("http://127.0.0.1:3000/curriculo", function(dados) {
+                $("#nome").html(dados.nome);
+                $("#profissao").html(dados.profissao);
+                $("#contato").html(dados.contato);
+                $("#email").html(dados.email);
+                $("#faculdade").html(dados.faculdade);
+                $("#curso").html(dados.curso);
+                $("#data_formacao").html(dados.data_formacao);
+                $("#empresa").html(dados.empresa);
+                $("#cargo").html(dados.cargo);
+                $("#data").html(dados.data);
+            });
+        }
+    </script>
+</head>
+<body>
+    <button onclick="verConteudo()">Ver CV</button>
+    <div id="resultado">
+        <div id="nome"></div>
+        <div id="profissao"></div>
+        <div id="contato"></div>
+        <div id="email"></div>
+        <div id="faculdade"></div>
+        <div id="curso"></div>
+        <div id="data_formacao"></div>
+        <div id="empresa"></div>
+        <div id="cargo"></div>
+        <div id="data"></div>
+    </div>
+</body>
+</html>
