@@ -6,35 +6,23 @@
             font: normal 13pt Inter;
         }
     </style>
-    <title>curriculo</title>
+    <title>Curriculo</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script>
-        function verConteudo() {
-            $.get("http://127.0.0.1:3000/curriculo", function(dados) {
-                $("#nome").html(dados[0].nome);
-                $("#profissao").html(dados[0].profissao);
-                $("#contato").html(dados[0].contato);
-                $("#email").html(dados[0].email);
-                $("#faculdade").html(dados[0].faculdade);
-                $("#curso").html(dados[0].curso);
-                $("#data_formacao").html(dados[0].data_formacao);
-                $("#empresa").html(dados[0].empresa);
-                $("#cargo").html(dados[0].cargo);
-                $("#data").html(dados[0].data);
-            });
-        }
-    </script>
+    <script src="script.js"></script>
 </head>
 <body>
-    <button onclick="verConteudo()">Ver CV</button>
-    <div id="resultado">
+    <button id="btnPessoais">Ver informações pessoais</button>
+    <div id="informacoesPessoais">
         <div id="nome"></div>
         <div id="profissao"></div>
         <div id="contato"></div>
         <div id="email"></div>
+    </div>
+    <button id="btnRestantes">Ver informações restantes</button>
+    <div id="informacoesRestantes">
         <div id="faculdade"></div>
         <div id="curso"></div>
-        <div id="data_formacao"></div>
+        <div id="dataFormacao"></div>
         <div id="empresa"></div>
         <div id="cargo"></div>
         <div id="data"></div>
